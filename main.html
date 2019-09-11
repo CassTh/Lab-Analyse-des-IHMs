@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Scénario d'élasticité prix</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			header {
+			<!-- à compléter -->
+			}
+
+			nav {
+			<!-- à compléter -->
+			}
+
+			footer {
+				background-color : gray;
+			}
+
+			.input-col1, .input-col2, .input-col3 {
+			  float: left;
+			  width: 28%;
+			  padding: 10px;
+			}
+
+			#inputs {
+			  width:auto;
+			}
+
+			.input-field {
+			  border: 2px solid black;
+			  margin-top: 10px;
+			  padding: 0px;
+			}
+
+			.company {
+			<!-- à compléter -->
+			}
+
+			<!-- à compléter -->
+
+			.alpha {<!-- à compléter -->}
+			.beta {<!-- à compléter -->}
+			.gamma {<!-- à compléter -->}
+			.epsilon {<!-- à compléter -->}
+			.mobile {<!-- à compléter -->}
+			.iota {<!-- à compléter -->}
+			.theta {<!-- à compléter -->}
+			.kappa {<!-- à compléter -->}
+
+			@media (max-width: 600px) {
+			  nav {
+			<!-- à compléter -->
+			  }
+			  nav ul li {
+			<!-- à compléter -->
+			  }
+
+			  header {
+				font-size: 20px;
+			  }
+			}
+		</style>
+
+		<script src="jquery-3.4.1.js"></script>
+		<script>
+			function panel(el, show, hide) {
+				if(	show =='inputs'){
+					$('#link_inputs').css('font-weight','bold');
+					$('#link_output').css('font-weight','');
+					// afficher la div inputs
+					// cacher la div output
+				}else if(show == 'output'){
+					$('#link_inputs').css('font-weight','');
+					$('#link_output').css('font-weight','bold');
+					// afficher la div output
+					// cacher la div inputs
+				}
+			}
+		</script>
+
+	</head>
+	<body>
+
+		<header>
+		  <h2>Scénarios d'élasticité-prix</h2>
+		</header>
+
+		<nav>
+		  <ul>
+			<li><a id="link_inputs" href="#" onclick="panel(this,'inputs','output');" style="font-weight: bold;">Inputs</a></li>
+			<li><a id="link_output" href="#" onclick="panel(this,'output','inputs');">Output</a></li>
+		  </ul>
+		</nav>
+
+		<div id="inputs">
+
+		  <div class="input-col1">
+			<div class="input-field">
+			  <!-- À compléter.  Chaque compagnie doit être représentée par un DIV. -->
+			</div>
+		  </div>
+		  <!-- à compléter -->
+		</div>
+
+		<div id="output">
+		  <!-- à compléter -->
+		</div>
+
+		<footer>
+		</footer>
+
+	</body>
+
+</html>
