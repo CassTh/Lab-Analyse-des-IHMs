@@ -30,6 +30,10 @@
 				padding: 20px;
 				height: 300px; 
 			}
+			
+			nav ul li{
+				list-style:none;
+			}
 
 			footer {
 				background-color:gray;
@@ -55,6 +59,10 @@
 
 			.company {
 				width : 100%;
+			}
+			
+			.output-table {
+			
 			}
 			
 			table {
@@ -141,10 +149,15 @@
 					font-size: 150%;
 				}
 				nav {
-				
+					float: left;
+					width: 100%;
+					background: #ccc;
+					padding: 20px;
+					height: 20%;
 				}
 				nav ul li {
-				
+					list-style:none;
+					display:inline;
 				}
 			}
 		</style>
@@ -464,7 +477,13 @@
 		</div>
 
 		<div id="output">
-		  <!-- à compléter -->
+			<table class="output-table">
+				<tr>
+					<th></th><th>Baseline</th><th>Scénario</th>
+				</tr>
+				<tr>
+				</tr>
+			</table>
 		</div>
 
 		<footer>
