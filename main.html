@@ -25,7 +25,7 @@
 
 			nav {
 				float: left;
-				width: 20%;
+				width: 15%;
 				background: #ccc;
 				padding: 20px;
 				height: 300px; 
@@ -61,8 +61,15 @@
 				width : 100%;
 			}
 			
-			.output-table {
+			#output {
+				
+				display: inline-block;
+				width: 85%;
+			}
 			
+			.output-table {
+				width : 85%;
+				font-size: 50%;
 			}
 			
 			table {
@@ -161,6 +168,8 @@
 				}
 			}
 		</style>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		<script src="jquery-3.4.1.js"></script>
 		<script>
@@ -186,6 +195,9 @@
 				}
 			}
 		</script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5xsXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjxsVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	</head>
 	<body>
@@ -476,14 +488,282 @@
 			</div>		  
 		</div>
 
-		<div id="output">
-			<table class="output-table">
-				<tr>
-					<th></th><th>Baseline</th><th>Scénario</th>
-				</tr>
-				<tr>
-				</tr>
-			</table>
+		<div id="output"  class="output-table">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">&#160;</div>
+					<div class="col-md-5">Baseline</div>
+					<div class="col-md-5">Scénario</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">&#160;</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Existing customers</div>
+					<div class="col-md-10">&#160;</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="col-xs-6">&#160;</div>
+						<div class="col-xs-6">Inert</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="col-xs-6">&#160;</div>
+						<div class="col-xs-6">Recontract</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="col-xs-6">&#160;</div>
+						<div class="col-xs-6">Churm</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">New customers</div>
+					<div class="col-md-10">&#160;</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="col-xs-6">&#160;</div>
+						<div class="col-xs-6">From customers</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="col-xs-6">&#160;</div>
+						<div class="col-xs-6">New to market</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="col-xs-6">&#160;</div>
+						<div class="col-xs-6">Total</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+					<div class="col-md-5">						
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-2">ARPU</div>
+						<div class="col-xs-2">Revenue</div>
+						<div class="col-xs-2">ACLV(E)</div>
+						<div class="col-xs-2">Value</div>
+						<div class="col-xs-2">ACLV Ratio</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Net gains from competitors</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Customers base</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">BT Group</div>
+					<div class="col-md-10">&#160;</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Gained from BT Mobile</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Lost to BT Mobile</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Net gains from BT Mobile</div>
+					<div class="col-xs-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">&#160;</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Gained from Plusnet</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Lost to Plusnet</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">Net gains from Plusnet</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">&#160;</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">BTG customer base</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+					<div class="col-md-5">
+						<div class="col-xs-2">Volume</div>
+						<div class="col-xs-10">&#160;</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<footer>
