@@ -21,3 +21,7 @@
 			$("#output").show();
 		}
 	}
+	
+	function maj_output(){
+		$('#img_output').attr("src","fig4.png");
+	}
