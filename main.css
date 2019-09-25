@@ -1,0 +1,175 @@
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 90%;
+	}
+
+	header {
+		background-color: grey;
+		text-align: center;
+		padding: 5%;
+		line-height: 80px;
+		color: white;
+		font-size: 200%;			 
+	}
+
+	nav {
+		float: left;
+		width: 15%;
+		background: #ccc;
+		padding: 20px;
+		height: 300px; 
+	}
+
+	nav ul li{
+		list-style:none;
+	}
+
+	footer {
+		background-color:gray;
+		padding: 10px;
+		width: 100%;
+		clear: both;
+	}
+
+	.input-col1, .input-col2, .input-col3 {
+	  float: left;
+	  width: 25%;
+	  margin-left:10px;
+	}
+
+	#inputs {
+	  width:auto;
+	}
+
+	.input-field {
+	  border: 2px solid black;
+	  margin-top: 10px;
+	}
+
+	.company {
+		width : 100%;
+	}
+
+	#output {
+		
+		display: inline-block;
+		width: 85%;
+	}
+
+	.output-table {
+		width : 85%;
+		font-size: 65%;
+	}
+
+	table {
+		width : 100%;
+		height: 100%;
+		border : 0;
+		border-collapse: collapse;
+	}
+
+	tr {
+		width : 100%;
+		height: 100%;
+	}
+
+	th {
+		width : 100%;
+		height: 100%;
+	}
+
+	td {
+		width : 100%;
+		height: 100%;
+		padding : 0;
+	}
+
+	select {
+		width : 100%;
+		height: 100%;
+		text-align : center;
+		background-color: #FFFAFA ;
+		border : 0;
+	}
+
+	.row {
+		padding: 0;
+		marging: 0;
+	}
+
+	.col-1, .col-2, .col-6, .col-10, .col-12 {
+		padding-right: 0;
+		padding-left: 0;
+		font-size: 80%;
+		display: inline-block;
+		: left;
+	}
+							
+	.alpha {
+		background-color: #80130c ;
+		color: white;
+	}
+
+	.beta {
+		background-color:  #ec7e3d ;
+		color: white;
+	}
+
+	.delta{
+		background-color: #9ACD32 ;
+		color: white;			
+	}
+
+	.gamma {
+		background-color: #ffc034 ;
+		color: white;
+	}
+				
+	.epsilon {
+		background-color: #0db0ed;
+		color: white;
+	}
+
+	.mobile {
+		background-color: #00205e ;
+		color: white;
+	}
+
+	.iota {
+		background-color: #6f319c ;
+		color: white;
+	}
+
+	.theta {
+		background-color: #fe37c8 ;
+		color: white;
+	}
+
+	.kappa {
+		background-color: #000000;
+		color: white;
+	}
+
+	@media (max-width: 600px) {
+		body{
+			font-size: 75%;
+		}
+		header {
+			font-size: 150%;
+		}
+		nav {
+			float: left;
+			width: 100%;
+			background: #ccc;
+			padding: 20px;
+			height: 20%;
+		}
+		nav ul li {
+			list-style:none;
+			display:inline;
+		}
+	}
