@@ -55,14 +55,20 @@
 	}
 
 	#output {
-		
+		float: left;
 		display: inline-block;
 		width: 85%;
+		padding: 5px;
 	}
 
 	.output-table {
-		width : 85%;
+		width : 100%;
 		font-size: 65%;
+	}
+	
+	.img_output{
+		max-width: 80%;
+		border: 1px solid black;
 	}
 
 	table {
