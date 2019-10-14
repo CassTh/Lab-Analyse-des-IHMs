@@ -20,12 +20,13 @@
 		float: left;
 		width: 15%;
 		background: #ccc;
-		padding: 20px;
+		padding-top: 20px; 
 		height: 300px; 
 	}
 
 	nav ul li{
 		list-style:none;
+		padding-right:10px;
 	}
 
 	footer {
@@ -63,12 +64,16 @@
 
 	.output-table {
 		width : 100%;
-		font-size: 65%;
+		font-size: 80%;
 	}
 	
 	#img_output{
-		max-width: 80%;
+		max-width: 90%;
 		border: 1px solid black;
+	}
+	
+	.bloc:first-letter{
+		text-transform: capitalize;
 	}
 
 	table {
